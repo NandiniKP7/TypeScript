@@ -93,7 +93,7 @@ console.log(income === 2000);   // false
 
 **5. Why we never use `==`**
 
-JavaScript also has `==`. It quietly converts the values to the same type before comparing, so in plain JavaScript `"5" == 5` is `true`. That hides bugs. `===` converts nothing: a text `"5"` and a number `5` are **different**, so the answer is `false`.
+There is also `==`. It quietly converts the values to the same type before comparing, so `"5" == 5` is `true`. That hides bugs. `===` converts nothing: a text `"5"` and a number `5` are **different**, so the answer is `false`.
 
 ```ts
 console.log("5" === "5");   // true   both text
@@ -124,4 +124,4 @@ Do `part / whole * 100`, not the other way around.
 - Comparisons (`> < >= <= === !==`) give `true` or `false`.
 - Always use `===` and `!==`, never `==`.
 
-**Next:** open `exercises.md` for today's project and challenges. 
+**Next:** open `exercises.md` for today's project and challenges.
