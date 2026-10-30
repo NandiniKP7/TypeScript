@@ -12,31 +12,22 @@
 // ACCESS DENIED: account is suspended
 // ```
 
-let userName:string ="nandini"
-let userAge:number=33
-let isVerified:boolean=true
-let isSuspended:boolean =false
+let userName: string = "nandini";
+let userAge: number = 33;
+let isVerified: boolean = true;
+let isSuspended: boolean = false;
 
-if(userName==="")
-{
-    console.log("ACCESS DENIED: username is missing")
+if (userName === "") {
+  console.log("ACCESS DENIED: username is missing");
+} else if (userAge < 18) {
+  console.log("ACCESS DENIED: must be 18 or older.");
+} else if (!isVerified) {
+  console.log("ACCESS DENIED: account is not verified.");
+} else if (isSuspended) {
+  console.log("ACCESS DENIED: account is suspended");
+} else {
+  console.log("ACCESS GRANTED");
 }
-else if(userAge<18)
-{
-    console.log("ACCESS DENIED: must be 18 or older.")
-}
-else if(!isVerified)
-{
-    console.log("ACCESS DENIED: account is not verified.")
-}
-else if(isSuspended)
-
-    {
-        console.log("ACCESS DENIED: account is suspended")
-    }
-    else{
-        console.log("ACCESS GRANTED")
-    }
 // **Build it yourself first.** Use today's `README.md` as your reference. If you are stuck for 15 minutes, open `project-walkthrough.md`.
 
 // Open a hint only after 10 minutes of trying.
@@ -107,7 +98,7 @@ let a: number = 30;
 let income: number = 2500;
 let creditscore: number = 700;
 let hasBankruptcy: boolean = false;
- if (n ==="") {
+if (n === "") {
   console.log("Name is required");
 } else if (a < 18) {
   console.log("DENIED  age is less than 18");
@@ -117,8 +108,7 @@ let hasBankruptcy: boolean = false;
   console.log("DENIED creditscore too low");
 } else if (hasBankruptcy) {
   console.log("DENIED you have hasBankruptcy");
-}
-else if (
+} else if (
   n != " " &&
   age >= 18 &&
   income >= 3000 &&
